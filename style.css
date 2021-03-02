@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+html *{
+	margin: 0;
+	padding: 0;
+}
+
+/*Body Styles*/
+
+body{
+	background-color: hsl(185, 75%, 39%);
+	font-size: 18px;
+	font-family: 'Kumbh Sans', Helevetica, sans-serif;
+	margin: 0;
+	
+}
+
+.container{
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+/* Background patterns positioning */
+
+#background-img-top {
+	right: 45%;
+	bottom: 43%;
+	position: fixed;
+	
+}
+
+#background-img-bottom {
+	top: 50%;
+	left: 48%;
+	position: fixed;
+}
+
+/* Card Styling*/
+
+.profile-card{
+	width: 100%;
+	max-width: 350px;
+	margin: 25vh auto;
+	text-align: center;
+	position: relative;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 15px 40px 1px hsl(188, 73%, 33%);
+	display: grid;
+	grid-template: repeat(5, 0.8fr) / repeat(3, 1fr);
+}
+
+.profile-card h3{
+	font-weight: 700;
+	font-size: 1em;
+	color: hsl(229, 23%, 23%);
+}
+
+.profile-card span{
+	color: hsl(227, 10%, 46%);
+	font-weight: 400;
+	font-size: 0.57em;
+	letter-spacing: 0.1em;
+}
+
+/* Card Image Style */
+
+#banner-img{
+	grid-area: 1 / 1 / span 2 / span 3;
+	background-image: url('../images/bg-pattern-card.svg');
+	border-radius: 15px 15px 0px 0px;
+}
+
+/* Personal Profile Section including info and picture */
+
+#victor-image{
+	position: absolute;
+	top: 80px;
+	left: 120px;
+	border-radius: 50%;
+	border: 5px solid #ffffff;
+}
+
+#victor-info{
+	grid-area: 3 / 1 / span 2 / span 3;
+	margin-top: 64px;
+}
+
+#victor-info h3{
+	display: inline;
+	padding: 0 4px 10px 0;
+}
+
+#person-info #age{
+	font-size: 1em;
+	letter-spacing: 0em;
+}
+
+#person-info #city {
+	font-size: 0.7em;
+	padding-top: 12px;
+	display: block;
+
+}
+
+/* LAST GRID - person profile media presence info */
+
+.person-attributes{
+	border-top: 1px solid #ddd;
+	padding: 24px 30px;
+	grid-area: 5 / 1 / span 1 / span 3;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+}
+
+#followers{
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+#likes{
+	grid-area: 1 / 2 / span 1 / span 1;;
+}
+#photos{
+	grid-area: 1 / 3 / span 1 / span 1;
+}
+
+/* Attribution Style */
+
+.attribution {
+	position: fixed;
+	margin: 0 50px;
+	bottom: 0px;
+	font-size: 11px;
+	font-weight: 400;
+	color: hsl(229, 23%, 23%); 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+	font-weight: 700;
+	text-decoration: none;
+}
